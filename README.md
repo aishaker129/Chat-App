@@ -1,4 +1,4 @@
-# ⬡ Nexus Chat
+# Nexus Chat
 
 A real-time chat application built with Spring Boot 3.5, Thymeleaf, WebSocket (STOMP), and Spring Security. Features multi-room messaging, live presence indicators, typing notifications, and a dark terminal-style UI.
 
@@ -355,4 +355,4 @@ client.activate();
 - **H2 is in-memory** — all data is lost on restart. This is intentional for development. Switch to PostgreSQL for persistence (see [Configuration](#configuration)).
 - **Thymeleaf cache is disabled** — template changes reflect immediately without restart during development.
 - **SockJS CDN** — the frontend loads SockJS and STOMP from jsDelivr CDN. For offline/production use, bundle them locally.
-- **Spring Boot 3.5 + Spring Security 6.5** — requires `@EnableWebSocketSecurity` in `WebSocketConfig` with an explicit `AuthorizationManager<Message<?>>` bean. Without this, STOMP messages are blocked even for authenticated users.
+- **Spring Boot 3.5 + Spring Security 6.5** — requires `@EnableWebSocketSecurity` in `WebSocketConfig` with an explicit `AuthorizationManager<Message<?>>` bean. Without this,STOMP messages are blocked even for authenticated users.
